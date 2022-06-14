@@ -30,12 +30,13 @@
 				<td>${personVo.company}</td>
 			</tr>
 			<tr>
-				<td><a href="/phonebook3/modifyForm/${personVo.personId}<%-- /${personVo.name}/${personVo.hp}/${personVo.company} --%>">[수정폼]</a></td>
-				<td><a href="/phonebook3/delete/${personVo.personId}">[삭제]</a></td>
+				<td><a href="./modifyForm?no=${personVo.personId}">[수정폼]</a></td>
+				<td><a href="./delete?no=${personVo.personId}">[삭제]</a></td>
 			</tr>
 		</table>
 		<br>
 	</c:forEach>
+	<a href="/phonebook3/writeForm">전화번호 새로 등록하기</a>
 	
 
 </body>

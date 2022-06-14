@@ -8,8 +8,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.javaex.vo.PersonVo;
 
+
+@Repository
 public class PhoneDao {
 
    // 0. import java.sql.*;
@@ -105,7 +109,8 @@ public class PhoneDao {
          query += "         name, ";
          query += "         hp, ";
          query += "         company ";
-         query += " from person";
+         query += " from person ";
+         query += " order by person_id asc ";
 
          if (keword != "" || keword == null) {
             query += " where name like ? ";

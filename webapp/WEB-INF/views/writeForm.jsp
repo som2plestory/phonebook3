@@ -14,7 +14,7 @@
 		아래 항목을 기입하고 "등록" 버튼을 클릭하세요
 	</p>
 	
-	<form action="/phonebook3/write" method="get">
+	<form action="/phonebook3/write" method="post">
 		<label for = "name"> 이름(name) </label>
 		<input id="name" type="text" name="name" value=""><br>
 		<label for = "name"> 핸드폰(hp)  </label>
