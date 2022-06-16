@@ -71,6 +71,7 @@ public class PhoneController {
 		return "redirect:/list";
 	}
 
+	//전화번호 삭제(파라미터 사용)
 	@RequestMapping(value = "/delete", method = { RequestMethod.GET, RequestMethod.POST })
 	public String delete(@RequestParam("no") int no) {
 		System.out.println("Phonedontrolle>delete()");
